@@ -1,42 +1,66 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="vendors/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-<body>
-	<div class="jumbotron">
-		<div class="container">
-			<nav class="navbar navbar-default">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="#"></a>
-					</div>
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Chi siamo</a></li>
-							<li><a href="#">Gallerie</a></li>
-							<li><a href="#">Forum</a></li>
-							<li><a href="#">Recensioni</a></li>
-						</ul>
-					</div><!-- /.navbar-collapse -->
-				</div><!-- /.container-fluid -->
-			</nav>
-			<div class="row">
-				<div class="col-md-12 welcome">
-					<h1> Fotografia di scena! </h1>
-					<h4>Iscriviti e ricevi gratuitamente la nostra guida via mail</h4>
-				</div>
-			</div>
-			<script type="text/javascript" src="vendors/js/jquery.min.js"></script>
-			<script type="text/javascript" src="vendors/js/bootstrap.min.js"></script>
-		</body>
-		</html>
+	h1 {
+    font-size: 58px;
+    text-align: left;
+}
+
+h4 {
+    font-size: 24px;
+    font-style:unset;
+    text-align: left;
+}
+.jumbotron {
+    background: url(../images/bg.jpg);
+    background-size: cover;
+    min-height: 850px;
+    padding-top: 10px;
+}
+
+.navbar-brand {
+    background: url(../images/brand.png) no-repeat;
+    width: 180px;
+    height: 40px;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #aaa;
+}
+.navbar-default .navbar-collapse {
+    padding-top: 4px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.welcome {
+    background: rgba(0, 0, 0, 0.2);
+    color: rgba(256, 256, 256, 0.85);
+    padding: 150px;
+    text-align: center;
+}
+
+@media (max-width: 750px) {
+    .navbar-default .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-color: transparent;
+    }
+    .navbar-default .navbar-nav>li>a {
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+        font-weight: 700;
+    }
