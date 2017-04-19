@@ -1,9 +1,19 @@
-.navbar-brand {
-	background: url(../images/logo.png);
-}
-	body{
-		background: url(../images/bg.jpg) no-repeat;
+	.jumbotron{
+		background: url("../images/bg.jpg") no-repeat;
 		background-size: cover;
-
-
+		min-height: 800px;
 	}
+
+.navbar-brand {
+	background: url("../images/logo.png") no-repeat;
+	width: 100px;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+	}
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+    font-size:15px;
+    font-weight:600;
+}
